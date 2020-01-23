@@ -29,6 +29,8 @@
 #define KC_SPEUR LGUI(LCTL(KC_RGHT))
 #define KC_SPELL LGUI(LCTL(LSFT(KC_LEFT)))
 #define KC_SPELR LGUI(LCTL(LSFT(KC_RGHT)))
+#define KC_SPENT LCTL(LALT(KC_RGHT))
+#define KC_SPEPT LCTL(LALT(KC_LEFT))
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -48,15 +50,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_SYMB] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐                ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐
-     KC_GRV  ,KC_F1   ,KC_F2   ,KC_F3   ,KC_F4   ,KC_F5   ,KC_F6   ,                 _______ ,KC_F7   ,KC_F8   ,KC_F9   ,KC_F10  ,KC_F11  ,KC_F12  ,
+     KC_GRV  ,KC_F1   ,KC_F2   ,KC_F3   ,KC_F4   ,KC_F5   ,KC_F6   ,                 KC_F6   ,KC_F7   ,KC_F8   ,KC_F9   ,KC_F10  ,KC_F11  ,KC_F12  ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______ ,KC_DQUO ,KC_UP   ,KC_GRV  ,KC_ASTR ,KC_PLUS ,KC_LANG2,                 KC_LANG1,KC_SPEUL,KC_SPEUR,KC_SPEUR,KC_TILD ,KC_CIRC ,KC_JYEN ,
+     _______ ,KC_DQUO ,KC_UP   ,KC_GRV  ,KC_LANG2,KC_LANG1,_______ ,                 KC_SPEPT,KC_SPEUL,KC_SPEUR,KC_SPENT,KC_TILD ,KC_CIRC ,KC_JYEN ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┘                └────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_AT   ,KC_HASH ,                                   KC_SPEL ,KC_SPEC ,KC_SPER  ,KC_SLSH ,KC_MINS ,_______ ,
+     _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_AT   ,KC_HASH ,                                   KC_SPEL ,KC_SPEC ,KC_SPER ,KC_LANG2,KC_LANG1,_______ ,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                                  ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______ ,KC_0    ,KC_CIRC ,KC_DLR  ,KC_ASTR ,KC_PERC ,                                   KC_SPELL,KC_SPELL,KC_SPELR,KC_LPRN ,KC_RPRN ,_______ ,
+     _______ ,KC_0    ,KC_CIRC ,KC_DLR  ,KC_ASTR ,KC_PERC ,                                   KC_DEL  ,KC_SPELL,KC_SPELR,KC_LPRN ,KC_RPRN ,_______ ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                ┌────────┼────────┼────────┴────────┼────────┼────────┼────────┤
-     _______ ,_______ ,_______ ,_______ ,_______ ,KC_SPC  ,KC_ENT  ,                 KC_UP   ,KC_DOWN ,_______ ,KC_HOME ,KC_PGUP ,KC_PGDN ,KC_END
+     _______ ,KC_QUES ,KC_AMPR ,KC_PIPE ,_______ ,KC_SPC  ,KC_ENT  ,                 KC_UP   ,KC_DOWN ,_______ ,KC_HOME ,KC_PGUP ,KC_PGDN ,KC_END
   //└────────┴────────┴────────┴────────┴────────┴────────┴────────┘                └────────┴────────┴────────┴────────┴────────┴────────┴────────┘
   )
 };
