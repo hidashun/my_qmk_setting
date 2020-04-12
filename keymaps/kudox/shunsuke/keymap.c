@@ -28,7 +28,8 @@
 
 #define KC_SPEL LGUI(LALT(KC_LEFT))
 #define KC_SPER LGUI(LALT(KC_RGHT))
-#define KC_SPEC LGUI(LALT(KC_C))
+#define KC_SPEC LGUI(LALT(KC_C))  // Fpr Office
+#define KC_SPEF LGUI(LALT(KC_F))  // For Home
 #define KC_SPEUL LGUI(LCTL(KC_LEFT))
 #define KC_SPEUR LGUI(LCTL(KC_RGHT))
 #define KC_SPELL LGUI(LCTL(LSFT(KC_LEFT)))
@@ -61,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      _______ ,KC_DQUO ,KC_UP   ,KC_GRV  ,KC_LANG2,KC_LANG1,KC_5    ,                 KC_SPEPT,KC_SPEUL,KC_SPEUR,KC_SPENT,KC_TILD ,KC_CIRC ,KC_JYEN ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┘                └────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_AT   ,KC_HASH ,                                   KC_SPEL ,KC_SPEC ,KC_SPER ,KC_LANG2,KC_LANG1,_______ ,
+     _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_AT   ,KC_HASH ,                                   KC_SPEL ,KC_SPEF ,KC_SPER ,KC_LANG2,KC_LANG1,_______ ,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                                  ├────────┼────────┼────────┼────────┼────────┼────────┤
      _______ ,KC_0    ,KC_CIRC ,KC_DLR  ,KC_ASTR ,KC_PERC ,                                   KC_DEL  ,KC_SPELL,KC_SPELR,KC_LPRN ,KC_RPRN ,KC_TGGM2,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                ┌────────┼────────┼────────┴────────┼────────┼────────┼────────┤
@@ -79,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                                  ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_LBRC ,KC_RBRC ,                                   KC_BSPC ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_BSLS ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                ┌────────┼────────┼────────┴────────┼────────┼────────┼────────┤
-     SYM_L   ,KC_GRV  ,KC_AL_J ,KC_AL_K ,KC_SPC  ,KKC_V   ,KC_M    ,                 KC_SCLN ,KC_EQL  ,KC_TGGM1,KC_LEFT ,KC_UP,   KC_DOWN ,KC_RGHT
+     SYM_L   ,KC_GRV  ,KC_AL_J ,KC_AL_K ,KC_SPC  ,KC_V    ,KC_M    ,                 KC_SCLN ,KC_EQL  ,KC_TGGM1,KC_LEFT ,KC_UP,   KC_DOWN ,KC_RGHT
   //└────────┴────────┴────────┴────────┴────────┴────────┴────────┘                └────────┴────────┴────────┴────────┴────────┴────────┴────────┘
   ),
 
