@@ -37,6 +37,8 @@
 #define KC_SPENT LCTL(LALT(KC_RGHT))
 #define KC_SPEPT LCTL(LALT(KC_LEFT))
 
+#define KC_MOVSC LGUI(LCTL(LALT(KC_LEFT)))
+
 #define KC_TGGM1 TG(_BORDERLANDS3)
 #define KC_TGGM2 TG(_OUTERWORLD)
 
@@ -64,12 +66,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┘                └────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_AT   ,KC_HASH ,                                   KC_SPEL ,KC_SPEF ,KC_SPER ,KC_LANG2,KC_LANG1,_______ ,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                                  ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______ ,KC_0    ,KC_CIRC ,KC_DLR  ,KC_ASTR ,KC_PERC ,                                   KC_DEL  ,KC_SPELL,KC_SPELR,KC_LPRN ,KC_RPRN ,KC_TGGM2,
+     _______ ,KC_0    ,KC_CIRC ,KC_DLR  ,KC_ASTR ,KC_PERC ,                                   KC_DEL  ,KC_SPELL,KC_SPELR,KC_MOVSC ,KC_RPRN ,KC_TGGM2,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                ┌────────┼────────┼────────┴────────┼────────┼────────┼────────┤
      _______ ,KC_EXLM ,KC_AMPR ,KC_PIPE ,_______ ,KC_SPC  ,KC_ENT  ,                 KC_UP   ,KC_DOWN ,KC_TGGM1,KC_HOME ,KC_PGUP ,KC_PGDN ,KC_END
   //└────────┴────────┴────────┴────────┴────────┴────────┴────────┘                └────────┴────────┴────────┴────────┴────────┴────────┴────────┘
   ),
-  
+
   [_BORDERLANDS3] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐                ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐
      KC_ESC  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,KC_P    ,                 KC_GRV  ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_MINS ,KC_BSPC ,
