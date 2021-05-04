@@ -61,15 +61,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐                ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐
-     KC_GESC ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,KC_6    ,                 KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_MINS ,KC_GRV,  KC_BSPC ,
+     KC_GESC ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,KC_6    ,                 KC_GRV,  KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_MINS ,KC_BSPC ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_LAMIN,                 KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_LBRC ,KC_RBRC ,
+     KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_LAMIN,                 KC_LBRC ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_RBRC ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┘                └────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LCTL ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,                                   KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_QUOT ,KC_ENT  ,
+     KC_LCTL ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,                                   KC_QUOT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_ENT  ,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                                  ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,                                   KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SCLN, KC_BSLS ,
+     KC_LSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,                                   KC_BSPC ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_BSLS ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                ┌────────┼────────┼────────┴────────┼────────┼────────┼────────┤
-     KC_LAESC,KC_GRV  ,KC_LALT ,KC_LGUI ,KC_LGDOT,KC_ALSP ,KC_SLSH ,                 KC_BSPC ,KC_EQL  ,KC_LAENT,KC_LEFT ,KC_UP,   KC_DOWN ,KC_RGHT
+     KC_LAESC,KC_GRV  ,KC_LALT ,KC_LGUI ,KC_LGDOT,KC_ALSP ,KC_SLSH ,                 KC_SCLN ,KC_EQL  ,KC_LAENT,KC_LEFT ,KC_UP,   KC_DOWN ,KC_RGHT
   //└────────┴────────┴────────┴────────┴────────┴────────┴────────┘                └────────┴────────┴────────┴────────┴────────┴────────┴────────┘
   ),
 
@@ -216,11 +216,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_SYMB] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐                ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┐
-     KC_GRV  ,KC_F1   ,KC_F2   ,KC_F3   ,KC_F4   ,KC_F5   ,KC_F6   ,                 KC_F7   ,KC_F8   ,KC_F9   ,KC_F10  ,KC_F11  ,KC_F12  ,KC_TGGM2,
+     KC_GRV  ,KC_F1   ,KC_F2   ,KC_F3   ,KC_F4   ,KC_F5   ,KC_F6   ,                 KC_TGGM2,KC_F7   ,KC_F8   ,KC_F9   ,KC_F10  ,KC_F11  ,KC_F12  ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______ ,KC_DQUO ,KC_UP   ,KC_GRV  ,KC_LANG2,KC_LANG1,KC_5    ,                 KC_SPEPT,KC_SPEUL,KC_SPEUR,KC_SPENT,KC_TILD ,KC_CIRC ,KC_JYEN ,
+     _______ ,KC_DQUO ,KC_UP   ,KC_GRV  ,KC_LANG2,KC_LANG1,KC_5    ,                 KC_CIRC ,KC_SPEPT,KC_SPEUL,KC_SPEUR,KC_SPENT,KC_TILD ,KC_JYEN ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┘                └────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_AT   ,KC_HASH ,                                   KC_SPEL ,KC_SPEF ,KC_SPER ,KC_LANG2,KC_LANG1,_______ ,
+     _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_AT   ,KC_HASH ,                                   KC_LANG1,KC_SPEL ,KC_SPEF ,KC_SPER ,KC_LANG2,_______ ,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                                  ├────────┼────────┼────────┼────────┼────────┼────────┤
      _______ ,KC_0    ,KC_CIRC ,KC_DLR  ,KC_ASTR ,KC_PERC ,                                   KC_DEL  ,KC_SPELL,KC_SPELR,KC_MOVSC,KC_RPRN, KC_TGGM4,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                ┌────────┼────────┼────────┴────────┼────────┼────────┼────────┤
